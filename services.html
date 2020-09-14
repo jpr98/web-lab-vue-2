@@ -30,10 +30,22 @@
           </ul>
         </div>
       </nav>
+
+      <section id="services" class="container services">
+        <div class="list-group">
+          <a href="#" @click="selectService(0)" class="list-group-item list-group-item-action" v-bind:class="{active: elements[0].isActive}">Planeación de viaje sencillo - {{elements[0].cost}}</a>
+          <a href="#" @click="selectService(1)" class="list-group-item list-group-item-action" v-bind:class="{active: elements[1].isActive}">Planeación de viaje sencillo y seguro - {{elements[1].cost}}</a>
+          <a href="#" @click="selectService(2)" class="list-group-item list-group-item-action" v-bind:class="{active: elements[2].isActive}">Asesoría boletos de avión- {{elements[2].cost}}</a>
+          <a href="#" @click="selectService(3)" class="list-group-item list-group-item-action" v-bind:class="{active: elements[3].isActive}">Planeación de viajes completo - {{elements[3].cost}}</a>
+          <a href="#" @click="selectService(4)" class="list-group-item list-group-item-action" v-bind:class="{active: elements[4].isActive}">Compra de boletos y seguro de viaje - {{elements[4].cost}}</a>
+        </div>
+
+        <p>Total: {{total}}</p>
+      </section>
     <script src="https://npmcdn.com/vue/dist/vue.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="services.js"></script>
   </body>
 </html>
